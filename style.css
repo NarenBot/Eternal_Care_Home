@@ -32,22 +32,6 @@ nav {
     font-size: 30px;
 }
 
-/* .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: "Georgia", serif;
-}
-
-.logo span {
-    font-weight: normal;
-    color: #e8f1f2;
-    border-left: 2px solid #ffffff;
-    padding-left: 10px;
-    margin-left: 8px;
-} */
-
-
 nav ul {
     list-style: none;
     display: flex;
@@ -116,6 +100,25 @@ nav ul li a:hover {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Improve Animations & UX */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.section {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 /* Gallery */
 .gallery {
     display: flex;
@@ -178,47 +181,133 @@ footer {
 
 
 /* Make Website Mobile Responsive */
-@media (max-width: 768px) {
+/* ===============================
+   iPhone & Mobile Fix
+   =============================== */
 
+@media screen and (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
     nav {
         flex-direction: column;
-        gap: 10px;
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-bottom: 8px;
+        text-align: center;
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
     }
 
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Banner */
     .banner {
-        height: 250px;
+        height: 220px;
     }
 
+    .banner-text {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .banner-text h1 {
+        font-size: 18px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 35px 15px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    /* Cards */
     .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    /* Gallery */
+    .gallery {
         flex-direction: column;
         align-items: center;
     }
 
     .gallery img {
-        width: 90%;
+        width: 100%;
+        max-width: 320px;
         height: auto;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    /* Buttons */
+    .donate-btn {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* Floating Buttons Fix */
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 15px;
+        padding: 10px 13px;
+        font-size: 16px;
+    }
+
+    .whatsapp-btn {
+        bottom: 75px;
+        right: 15px;
+        font-size: 22px;
+        padding: 12px 14px;
+    }
+
+    footer {
+        font-size: 13px;
+        padding: 12px;
     }
 }
 
-.card {
-    transition: transform 0.3s, box-shadow 0.3s;
+* {
+    -webkit-tap-highlight-color: transparent;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 
-.section {
-    animation: fadeIn 1.2s ease;
-}
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
