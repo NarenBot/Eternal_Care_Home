@@ -1,0 +1,136 @@
+/* =========================
+   Mobile Responsive Styles
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Body */
+    body {
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+    }
+
+    /* Banner */
+    .banner {
+        height: 250px;
+    }
+
+    .banner-text {
+        width: 90%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* Sections */
+    .section {
+        padding: 35px 15px;
+    }
+
+    /* Cards */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    /* Gallery */
+    .gallery img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Donation QR */
+    .qr-box {
+        padding: 15px;
+    }
+
+    .qr-box img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .donation-title {
+        font-size: 16px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 15px;
+    }
+
+    /* Address Box */
+    .address-box {
+        margin: 25px 10px 0;
+        padding: 18px;
+    }
+
+    .address-box h3 {
+        font-size: 18px;
+    }
+
+    .address-box p {
+        font-size: 14px;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+        bottom: 70px;
+        right: 15px;
+    }
+
+    /* Scroll To Top */
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 15px;
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
