@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eternal-Care-Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
@@ -62,16 +64,31 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section light-bg">
-        <h2>Contact Us</h2>
-        <p>Email: eternalcarehome@gmail.com</p>
-        <p>Phone: +91 9999900000</p>
-        <p>Address: Vadalur, TamilNadu</p>
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="contact-form">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <textarea id="message" placeholder="Your Message" rows="5"></textarea>
+    <button type="submit">Send Message</button>
+    <p id="formStatus"></p>
+    </form>
     </section>
+
 
     <!-- Footer -->
     <footer>
         <p>© 2026 Eternal-Care-Home</p>
     </footer>
+
+    <!-- Watsapp Button -->
+    <a href="https://wa.me/919884863650?text=I%20would%20like%20to%20donate"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp Donation">
+    <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
 
     <!-- Scroll To Top Button -->
     <button id="scrollTopBtn" title="Go to top">↑</button>
