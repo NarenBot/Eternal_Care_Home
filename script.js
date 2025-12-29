@@ -84,7 +84,7 @@ form.addEventListener("submit", function (e) {
     .then(res => res.text())
     .then(data => {
         statusMsg.style.color = "green";
-        statusMsg.innerText = "Message sent successfully!";
+        statusMsg.innerText = "Message Sent Successfully!";
         form.reset();
     })
     .catch(err => {

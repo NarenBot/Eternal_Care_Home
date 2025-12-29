@@ -140,19 +140,55 @@ nav ul li a:hover {
 }
 
 
-/* Donate Button */
-.donate-btn {
-    background-color: #6fb3b8;
-    border: none;
-    padding: 12px 25px;
-    color: white;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
+/* Donation QR Section */
+.donation-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
 }
 
-.donate-btn:hover {
-    background-color: #4e9aa0;
+.qr-box {
+    background: #ffffff;
+    max-width: 480px;
+    margin: 25px auto 0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.qr-box img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.account-name {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.whatsapp-contact {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-contact a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-contact a:hover {
+    text-decoration: none;
+    color: #25D366;
+}
+
+.donation-note {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
 }
 
 
@@ -186,6 +222,31 @@ nav ul li a:hover {
 #formStatus {
     margin-top: 10px;
     font-size: 16px;
+}
+
+
+/* Address Section Styling */
+.address-box {
+    max-width: 480px;
+    margin: 40px auto 0;
+    padding: 25px;
+    background-color: #ffffff;
+    border-left: 5px solid #6fb3b8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
+}
+
+.address-box h3 {
+    margin-bottom: 12px;
+    color: #4e9aa0;
+    font-size: 20px;
+}
+
+.address-box p {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #333;
 }
 
 
