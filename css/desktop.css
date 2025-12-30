@@ -252,6 +252,17 @@ footer {
     padding: 15px;
 }
 
+.designer-credit {
+    font-size: 12px;
+    margin-top: 6px;
+    color: #e8f1f2;
+}
+
+.designer-credit span {
+    font-style: italic;
+}
+
+
 
 /* Watsapp Button */
 .whatsapp-btn {
