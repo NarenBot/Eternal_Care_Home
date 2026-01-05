@@ -65,12 +65,39 @@
     }
 
     /* Gallery */
-    .gallery img {
-        width: 90%;
-        height: auto;
+    .gallery {
+        max-width: 100%;
+        padding: 0 12px;
     }
 
+    .gallery img {
+        width: 100%;
+        height: auto;          /* VERY IMPORTANT */
+        max-height: 280px;     /* prevents over-stretching */
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .nav-btn {
+        font-size: 18px;
+        padding: 8px;
+        background: rgba(0, 0, 0, 0.55);
+    }
+
+    .left {
+        left: 6px;
+    }
+
+    .right {
+        right: 6px;
+    }
+
+
     /* Donation QR */
+    .donation-title {
+        font-size: 16px;
+    }
+
     .qr-box {
         padding: 15px;
     }
@@ -79,10 +106,13 @@
         width: 100%;
         max-width: 280px;
     }
-
-    .donation-title {
-        font-size: 16px;
+    .account-name {
+        max-width: 280px;
+        word-break: break-word;
+        overflow-wrap: anywhere;
+        white-space: normal;
     }
+
 
     /* Contact Form */
     .contact-form {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eternal-Care-Home</title>
+    <title>Ulagamaiyam-Home-Care</title>
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="stylesheet" href="css/mobile.css" media="(max-width: 480px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,11 +13,11 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <div class="logo">Eternal Care Home💕</div>
+        <div class="logo">Ulagamaiyam💕</div>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#photos">Gallery</a></li>
             <li><a href="#donate">Donate</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -25,7 +25,7 @@
 
     <!-- Banner Section -->
     <section id="home" class="banner">
-        <img id="slider" src="images/slide1.jpg" alt="Old Age Home">
+        <img id="slider" src="images/gallery/slide_23.jpg" alt="Old Age Home">
         <div class="banner-text">
             <h1>Caring With Love & Dignity</h1>
             <p>A peaceful home for senior citizens</p>
@@ -45,16 +45,15 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section light-bg">
-        <h2>Photo Gallery</h2>
+    <section id="photos" class="section light-bg">
+    <h2>Photo Gallery</h2>
         <div class="gallery">
-            <img src="images/slide1.jpg">
-            <img src="images/slide2.jpg">
-            <img src="images/slide3.jpg">
-            <img src="images/slide4.jpg">
-            <img src="images/slide5.jpg">
+            <button class="nav-btn left" onclick="prevSlide()">❮</button>
+            <img id="sliderImage" src="" alt="Gallery Image">
+            <button class="nav-btn right" onclick="nextSlide()">❯</button>
         </div>
     </section>
+
 
     <!-- Donation Section -->
     <section id="donate" class="section">
@@ -62,16 +61,18 @@
     <p class="donation-title">UPI Donation</p>
 
     <div class="qr-box">
-        <img src="images/qr_code/My_QR_Code.png" alt="UPI Donation QR Code">
+        <img src="images/qr_code/QR_Code.png" alt="UPI Donation QR Code">
 
         <p class="account-name">
-            Account Name: <strong>Eternal Care Home</strong>
+            Account Name: <strong>Vallalar Samarasa Sutha Sanmarga Sathia Sanga</strong>
         </p>
-
+        <p class="account-name">
+            UPI ID: <strong>vallalarsamarasasuthasanmargasathiasanga@sbi</strong>
+        </p>
         <p class="whatsapp-contact">
             📞 WhatsApp:
-            <a href="https://wa.me/919884863650" target="_blank">
-                +91 98848 63650
+            <a href="https://wa.me/919443259357" target="_blank">
+                +91 94432 59357
             </a>
         </p>
 
@@ -98,9 +99,9 @@
     <div class="address-box">
     <h3>Our Address</h3>
     <p>
-        Eternal Care Home,<br>
-        #25, Green Valley Street,<br>
-        Near Temple Road,<br>
+        Ulagamaiyam Vallalar Home Care,<br>
+        #13, Muthukumarasamy Nagar, Parvathipuram,<br>
+        Kurinjipadi Taluk, Cuddalore District,<br>
         Vadalur – 607303,<br>
         Tamil Nadu, India.
     </p>
@@ -110,7 +111,7 @@
 
     <!-- Footer -->
     <footer>
-    <p>© 2026 Eternal Care Home. All rights reserved.</p>
+    <p>© 2026 Ulagamaiyam. All rights reserved.</p>
     <p class="designer-credit">
         Designed by <span>Narendran Mudadi</span>
     </p>
@@ -118,7 +119,7 @@
 
 
     <!-- Watsapp Button -->
-    <a href="https://wa.me/919884863650?text=I%20would%20like%20to%20donate"
+    <a href="https://wa.me/919443259357?text=I%20would%20like%20to%20donate"
     class="whatsapp-btn"
     target="_blank"
     aria-label="WhatsApp Donation">
@@ -130,7 +131,7 @@
     <button id="scrollTopBtn" title="Go to top">↑</button>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

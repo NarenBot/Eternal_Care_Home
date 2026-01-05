@@ -1,9 +1,10 @@
+// Slides On Banner:
 let images = [
-    "images/slide1.jpg",
-    "images/slide2.jpg",
-    "images/slide3.jpg",
-    "images/slide4.jpg",
-    "images/slide5.jpg"
+    "images/gallery/slide_8.jpg",
+    "images/gallery/slide_15.jpg",
+    "images/gallery/slide_8.jpg",
+    "images/gallery/slide_9.jpg",
+    "images/gallery/slide_10.jpg"
 ];
 
 let index = 0;
@@ -15,6 +16,34 @@ function changeImage() {
 }
 
 setInterval(changeImage, 3000); // change every 3 seconds
+
+
+// GALLERY (Auto N images)
+let currentIndex = 1;
+const totalImages = 25; // ONLY change this number
+const imagePath = "images/gallery/";
+
+const sliderImage = document.getElementById("sliderImage");
+
+function showImage() {
+    sliderImage.src = `${imagePath}slide_${currentIndex}.jpg`;
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex % totalImages) + 1;
+    showImage();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 2 + totalImages) % totalImages + 1;
+    showImage();
+}
+
+// Auto slide
+setInterval(nextSlide, 3000);
+
+// Load first image
+showImage();
 
 
 // *SCROLL BUTTON*
