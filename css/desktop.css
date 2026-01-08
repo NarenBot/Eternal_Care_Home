@@ -11,17 +11,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #6fb3b8;
-    padding: 15px 30px;
+    padding-right: 30px;
 }
 
+
+/* Logo Wrapper */
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+/* Logo Text */
+.logo-text {
     font-size: 24px;
     font-weight: 600;
     color: black;
-    font-family: "Georgia", serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.logo::first-letter {
+.logo-text::first-letter {
     color: #fadd88;
     font-size: 30px;
 }
@@ -33,6 +48,7 @@ nav ul {
 }
 
 nav ul li a {
+    font-size: 18px;
     text-decoration: none;
     color: white;
     font-weight: 600;
@@ -77,6 +93,79 @@ nav ul li a:hover {
 
 .light-bg {
     background-color: #e8f1f2;
+}
+
+
+/* ABOUT US */
+.about-container {
+    display: flex;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.about-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 24px 26px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.about-box h3 {
+    font-size: 20px;
+    color: #2c6e49;
+    margin-bottom: 6px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+.about-box h4 {
+    font-size: 16px;
+    margin: 16px 0 10px;
+    color: #444;
+    text-align: left;
+}
+
+/* Paragraph */
+.about-box p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #333;
+    text-align: justify;
+}
+
+/* List Styling */
+.about-box ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.about-box ul li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+/* Tamil-specific Typography */
+.about-box.tamil {
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+}
+
+.about-box.tamil p{
+    font-size: 14px;
+    text-align: left;
+    /* line-height: 1.9;     */
+    letter-spacing: 0.02em;
+}
+
+.about-box.tamil li{
+    font-size: 14px;
+    text-align: left;
+    letter-spacing: 0.02em;
 }
 
 

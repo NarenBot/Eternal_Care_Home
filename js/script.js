@@ -1,10 +1,10 @@
 // Slides On Banner:
 let images = [
-    "images/gallery/slide_8.jpg",
-    "images/gallery/slide_15.jpg",
-    "images/gallery/slide_8.jpg",
-    "images/gallery/slide_9.jpg",
-    "images/gallery/slide_10.jpg"
+    "assets/gallery/slide_8.jpg",
+    "assets/gallery/slide_15.jpg",
+    "assets/gallery/slide_8.jpg",
+    "assets/gallery/slide_9.jpg",
+    "assets/gallery/slide_10.jpg"
 ];
 
 let index = 0;
@@ -18,10 +18,24 @@ function changeImage() {
 setInterval(changeImage, 3000); // change every 3 seconds
 
 
+// // FETCHING .txt Files:
+// fetch("D:\Projects\Eternal_Care_Home\assets\content\about-en.txt")
+//     .then(res => res.text())
+//     .then(data => {
+//         document.getElementById("about-en").innerText = "This is for English";
+//     });
+
+// fetch("D:\Projects\Eternal_Care_Home\assets\content\about-en.txt")
+//     .then(res => res.text())
+//     .then(data => {
+//         document.getElementById("about-ta").innerText = "This is for Tamil";
+//     });
+
+
 // GALLERY (Auto N images)
 let currentIndex = 1;
 const totalImages = 25; // ONLY change this number
-const imagePath = "images/gallery/";
+const imagePath = "assets/gallery/";
 
 const sliderImage = document.getElementById("sliderImage");
 
