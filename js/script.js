@@ -1,9 +1,9 @@
 // Slides On Banner:
 let images = [
-    "assets/gallery/slide_8.jpg",
     "assets/gallery/slide_15.jpg",
-    "assets/gallery/slide_8.jpg",
-    "assets/gallery/slide_9.jpg",
+    "assets/gallery/slide_18.jpg",
+    "assets/gallery/slide_23.jpg",
+    "assets/gallery/slide_17.jpg",
     "assets/gallery/slide_10.jpg"
 ];
 
@@ -14,8 +14,8 @@ function changeImage() {
     index = (index + 1) % images.length;
     slider.src = images[index];
 }
-
-setInterval(changeImage, 3000); // change every 3 seconds
+// Auto slide
+setInterval(changeImage, 5000); // change every 3 seconds
 
 
 // // FETCHING .txt Files:
@@ -52,9 +52,8 @@ function prevSlide() {
     currentIndex = (currentIndex - 2 + totalImages) % totalImages + 1;
     showImage();
 }
-
 // Auto slide
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 10000);
 
 // Load first image
 showImage();

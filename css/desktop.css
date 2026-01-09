@@ -14,7 +14,6 @@ nav {
     padding-right: 30px;
 }
 
-
 /* Logo Wrapper */
 .logo {
     display: flex;
@@ -57,6 +56,42 @@ nav ul li a {
 nav ul li a:hover {
     /* text-decoration: underline; */
     color: rgba(0,0,0,0.8);
+}
+
+
+/* Slogam Section */
+.slogam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px 5px;
+    /* Lamp-friendly background */
+    background: radial-gradient(
+        circle at center,
+        #2e1a00 0%,
+        #1a0e00 45%,
+        #0d0700 100%
+    );
+    text-align: center;
+}
+
+/* Tamil Slogam Text */
+.slogam span {
+    font-family: "Noto Sans Tamil", "Latha", sans-serif;
+    font-size: 20px;
+    color: #f5e6b0;
+    /* line-height: 1.6; */
+    white-space: nowrap;
+}
+
+/* Lamp Image */
+.slogam-img {
+    width: 100px;
+    height: auto;
+    /* Glow effect */
+    filter: drop-shadow(0 0 12px rgba(255, 190, 90, 0.8))
+            drop-shadow(0 0 28px rgba(255, 160, 60, 0.6));
 }
 
 

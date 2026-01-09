@@ -1,4 +1,4 @@
 from PIL import Image
 
-img = Image.open("../source/Ulagamayam_Logo.jpeg")
-img.save("fixed.png", "JPEG")
+img = Image.open("slide_1.jpg")
+img.save("fixed.jpg", "JPEG")
