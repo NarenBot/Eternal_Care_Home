@@ -114,24 +114,24 @@ form.addEventListener("submit", function (e) {
     }
 
     // Send to Google Sheet
-    fetch("https://script.google.com/macros/s/AKfycbzayul1C46Ga4DpIbTRQQFM1dU_VwbY2_odsd1L43CTPrQ1RFGWeCdjs2eJqwDSaI63/exec", {
-    method: "POST",
-    body: JSON.stringify({
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
-    })
+    fetch("https://script.google.com/macros/s/AKfycbxI7ohxAuMjjA8ZhjWniXg374pLvfUeexd3f1XZN3R0Orq-54VWqmMoDgHPmo_18wQo/exec", {
+        method: "POST",
+        body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        })
     })
     .then(res => res.text())
     .then(data => {
         statusMsg.style.color = "green";
-        statusMsg.innerText = "Message Sent Successfully!";
+        statusMsg.innerText = "Message sent successfully!";
         form.reset();
     })
     .catch(err => {
         statusMsg.style.color = "red";
         statusMsg.innerText = "Something went wrong. Please try again.";
     });
-
 });
+
